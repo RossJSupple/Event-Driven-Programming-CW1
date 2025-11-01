@@ -308,6 +308,8 @@ namespace _30094747
                     tw.WriteLine("{0,-20}{1,-15} {2}", itemName,'x' + itemQTY, dateTime);
 
                 }
+                tw.WriteLine("Order Total: " + txtItemTotals.Text);
+                tw.WriteLine();
                 tw.WriteLine();
             }
 
