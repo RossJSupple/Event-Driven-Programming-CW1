@@ -77,9 +77,9 @@ namespace _30094747
             enableMoneyButtons();
             txtItemTotals.Hide();
             lblTotal.Hide();
-            txtInsertedChange.Show();
-            lblInsertedMoney.Show();
-            txtInsertedChange.Text = txtItemTotals.Text; 
+            txtCheckoutTotal.Show();
+            lblTotalTwo.Show();
+            txtCheckoutTotal.Text = txtItemTotals.Text; 
         }
 
         private void disableItemButtons()
@@ -116,10 +116,10 @@ namespace _30094747
             txtItemTotals.Clear();
             txtItemTotals.Show();
             lblTotal.Show();
-            txtInsertedChange.Hide();
-            lblInsertedMoney.Hide();
+            txtCheckoutTotal.Hide();
+            lblTotalTwo.Hide();
             txtItemTotals.Text = "£0.00";
-            txtInsertedChange.Text = "0.00";
+            txtCheckoutTotal.Text = "0.00";
             lstViewCart.Enabled = true;
             picBoxItemOne.Enabled = true;
             picBoxItemTwo.Enabled = true;
@@ -175,21 +175,21 @@ namespace _30094747
             string lastAction = "Insert";
             double moneyValue = Convert.ToDouble(e.Data.GetData(DataFormats.Text).ToString());
             displayLastAction(lastAction, moneyValue.ToString("F2"));
-            double oldTotalValue = Convert.ToDouble(txtInsertedChange.Text.Trim('£'));
+            double oldTotalValue = Convert.ToDouble(txtCheckoutTotal.Text.Trim('£'));
             double newTotalValue = oldTotalValue - moneyValue;
-            txtInsertedChange.Text = '£' + newTotalValue.ToString("F2");
+            txtCheckoutTotal.Text = '£' + newTotalValue.ToString("F2");
             calculateChange();
         }
 
         private void calculateChange()
         {
             double overallTotal = Convert.ToDouble(txtItemTotals.Text.Trim('£'));
-            double TotalAfterChangeEntered = Convert.ToDouble(txtInsertedChange.Text.Trim('£'));
+            double TotalAfterChangeEntered = Convert.ToDouble(txtCheckoutTotal.Text.Trim('£'));
             double changeGiven;
             if (TotalAfterChangeEntered <= 0)
             {
                 changeGiven = TotalAfterChangeEntered * -1 + 0;
-                txtInsertedChange.Text = "£0.00";
+                txtCheckoutTotal.Text = "£0.00";
                 MessageBox.Show("Thank you for shopping with us,\nyour change is: " + '£' + changeGiven.ToString("F2"), "Order Complete");
                 writeTransactionToFile();
                 resetSystem();
@@ -299,7 +299,7 @@ namespace _30094747
             {
                 if (fileExists == false)
                 {
-                    tw.WriteLine("{0,-15}{1,-20} {2}", header1, header2, header3);
+                    tw.WriteLine("{0,-20}{1,-20} {2}", header1, header2, header3);
                     tw.WriteLine();
                 }
                 foreach (ListViewItem item in lstViewCart.Items)
@@ -307,10 +307,11 @@ namespace _30094747
                     
                     string itemName = item.Text;
                     string itemQTY = item.SubItems[1].Text;
-                    tw.WriteLine("{0,-20}{1,-15} {2}", itemName,'x' + itemQTY, dateTime);
+                    tw.WriteLine("{0,-25}{1,-15} {2}", itemName,'x' + itemQTY, dateTime);
 
                 }
-                tw.WriteLine("Order Total: " + txtItemTotals.Text);
+                tw.WriteLine();
+                tw.WriteLine("Order Total: " + "{0, -28}{1}", txtItemTotals.Text, dateTime);
                 tw.WriteLine();
                 tw.WriteLine();
             }

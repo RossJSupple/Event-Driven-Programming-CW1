@@ -50,9 +50,9 @@
             picBoxCoinSlot = new PictureBox();
             picBoxFivePound = new PictureBox();
             picBoxOnePound = new PictureBox();
-            txtInsertedChange = new TextBox();
+            txtCheckoutTotal = new TextBox();
             lblTotal = new Label();
-            lblInsertedMoney = new Label();
+            lblTotalTwo = new Label();
             picBoxFiftyPence = new PictureBox();
             picBoxTwentyPence = new PictureBox();
             picBoxBin = new PictureBox();
@@ -148,6 +148,7 @@
             // clmHeaderQty
             // 
             clmHeaderQty.Text = "Quantity";
+            clmHeaderQty.TextAlign = HorizontalAlignment.Center;
             clmHeaderQty.Width = 75;
             // 
             // picBoxItemTwo
@@ -331,19 +332,19 @@
             picBoxOnePound.Tag = "1.00";
             picBoxOnePound.MouseDown += dragMoney_MouseDown;
             // 
-            // txtInsertedChange
+            // txtCheckoutTotal
             // 
-            txtInsertedChange.BackColor = Color.White;
-            txtInsertedChange.BorderStyle = BorderStyle.None;
-            txtInsertedChange.Font = new Font("Segoe UI", 15F);
-            txtInsertedChange.Location = new Point(709, 685);
-            txtInsertedChange.Name = "txtInsertedChange";
-            txtInsertedChange.ReadOnly = true;
-            txtInsertedChange.Size = new Size(78, 27);
-            txtInsertedChange.TabIndex = 19;
-            txtInsertedChange.Text = "£0.00";
-            txtInsertedChange.TextAlign = HorizontalAlignment.Right;
-            txtInsertedChange.Visible = false;
+            txtCheckoutTotal.BackColor = Color.White;
+            txtCheckoutTotal.BorderStyle = BorderStyle.None;
+            txtCheckoutTotal.Font = new Font("Segoe UI", 15F);
+            txtCheckoutTotal.Location = new Point(709, 685);
+            txtCheckoutTotal.Name = "txtCheckoutTotal";
+            txtCheckoutTotal.ReadOnly = true;
+            txtCheckoutTotal.Size = new Size(78, 27);
+            txtCheckoutTotal.TabIndex = 19;
+            txtCheckoutTotal.Text = "£0.00";
+            txtCheckoutTotal.TextAlign = HorizontalAlignment.Right;
+            txtCheckoutTotal.Visible = false;
             // 
             // lblTotal
             // 
@@ -354,15 +355,15 @@
             lblTotal.TabIndex = 20;
             lblTotal.Text = "Total:";
             // 
-            // lblInsertedMoney
+            // lblTotalTwo
             // 
-            lblInsertedMoney.Font = new Font("Segoe UI", 15F);
-            lblInsertedMoney.Location = new Point(591, 685);
-            lblInsertedMoney.Name = "lblInsertedMoney";
-            lblInsertedMoney.Size = new Size(63, 27);
-            lblInsertedMoney.TabIndex = 21;
-            lblInsertedMoney.Text = "Total:";
-            lblInsertedMoney.Visible = false;
+            lblTotalTwo.Font = new Font("Segoe UI", 15F);
+            lblTotalTwo.Location = new Point(591, 685);
+            lblTotalTwo.Name = "lblTotalTwo";
+            lblTotalTwo.Size = new Size(63, 27);
+            lblTotalTwo.TabIndex = 21;
+            lblTotalTwo.Text = "Total:";
+            lblTotalTwo.Visible = false;
             // 
             // picBoxFiftyPence
             // 
@@ -641,9 +642,9 @@
             Controls.Add(picBoxBin);
             Controls.Add(picBoxTwentyPence);
             Controls.Add(picBoxFiftyPence);
-            Controls.Add(lblInsertedMoney);
+            Controls.Add(lblTotalTwo);
             Controls.Add(lblTotal);
-            Controls.Add(txtInsertedChange);
+            Controls.Add(txtCheckoutTotal);
             Controls.Add(picBoxOnePound);
             Controls.Add(picBoxFivePound);
             Controls.Add(picBoxCoinSlot);
@@ -710,9 +711,9 @@
         private PictureBox picBoxCoinSlot;
         private PictureBox picBoxFivePound;
         private PictureBox picBoxOnePound;
-        private TextBox txtInsertedChange;
+        private TextBox txtCheckoutTotal;
         private Label lblTotal;
-        private Label lblInsertedMoney;
+        private Label lblTotalTwo;
         private PictureBox picBoxFiftyPence;
         private PictureBox picBoxTwentyPence;
         private PictureBox picBoxBin;
