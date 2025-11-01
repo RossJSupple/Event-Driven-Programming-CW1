@@ -1,176 +1,20 @@
 Item Name      Item Quantity        Date
 
-Coca Cola           x1              31/10/25 09:15:27
-Dr Pepper           x1              31/10/25 09:15:27
-Squares             x1              31/10/25 09:15:27
-Galaxy              x1              31/10/25 09:15:27
-Fanta               x1              31/10/25 09:15:27
-Mountain Dew        x1              31/10/25 09:15:27
-Monster Munch       x1              31/10/25 09:15:27
-Dairy Milk          x1              31/10/25 09:15:27
-Coca Cola           x1              31/10/25 09:19:50
-Dr Pepper           x1              31/10/25 09:19:50
-Squares             x1              31/10/25 09:19:50
-Galaxy              x1              31/10/25 09:19:50
-Fanta               x1              31/10/25 09:19:50
-Coca Cola           x1              31/10/25 09:20:13
-Dr Pepper           x1              31/10/25 09:20:13
-Squares             x1              31/10/25 09:20:13
-Galaxy              x1              31/10/25 09:20:13
-Fanta               x1              31/10/25 09:20:13
-Mountain Dew        x1              31/10/25 09:20:13
-Monster Munch       x1              31/10/25 09:20:13
-Dairy Milk          x1              31/10/25 09:20:13
-Dairy Milk          x1              31/10/25 09:21:54
-Monster Munch       x1              31/10/25 09:21:54
-Fanta               x1              31/10/25 09:21:54
-Mountain Dew        x1              31/10/25 09:21:54
-Coca Cola           x1              31/10/25 09:23:02
-Dr Pepper           x2              31/10/25 09:23:02
-Squares             x1              31/10/25 09:23:02
-Galaxy              x1              31/10/25 09:23:02
-Fanta               x1              31/10/25 09:23:02
-Mountain Dew        x1              31/10/25 09:23:02
-Monster Munch       x1              31/10/25 09:23:02
-Dairy Milk          x1              31/10/25 09:23:02
-Coca Cola           x1              31/10/25 09:30:21
-Squares             x1              31/10/25 09:30:21
-Galaxy              x1              31/10/25 09:30:21
-Fanta               x2              31/10/25 09:30:21
-Mountain Dew        x2              31/10/25 09:30:21
-Monster Munch       x1              31/10/25 09:30:21
-Dairy Milk          x1              31/10/25 09:30:21
-Coca Cola           x1              31/10/25 09:31:45
-Dr Pepper           x1              31/10/25 09:31:45
-Squares             x1              31/10/25 09:31:45
-Galaxy              x1              31/10/25 09:31:45
-Coca Cola           x1              31/10/25 09:32:47
-Dr Pepper           x1              31/10/25 09:32:47
-Squares             x1              31/10/25 09:32:47
-Galaxy              x1              31/10/25 09:32:47
-Fanta               x1              31/10/25 09:32:47
-Mountain Dew        x1              31/10/25 09:32:47
-Monster Munch       x1              31/10/25 09:32:47
-Dairy Milk          x1              31/10/25 09:32:47
-Coca Cola           x1              31/10/25 09:48:44
-Dr Pepper           x1              31/10/25 09:48:44
-Squares             x1              31/10/25 09:48:44
-Coca Cola           x1              31/10/25 09:51:24
-Dr Pepper           x1              31/10/25 09:51:24
-Squares             x1              31/10/25 09:51:24
-Galaxy              x1              31/10/25 09:51:24
-Fanta               x1              31/10/25 09:51:24
-Mountain Dew        x1              31/10/25 09:51:24
-Monster Munch       x1              31/10/25 09:51:24
-Dairy Milk          x1              31/10/25 09:51:24
-Coca Cola           x1              31/10/25 09:52:32
-Dr Pepper           x1              31/10/25 09:52:32
-Squares             x1              31/10/25 09:52:32
-Galaxy              x1              31/10/25 09:52:32
-Fanta               x1              31/10/25 09:52:32
-Mountain Dew        x1              31/10/25 09:52:32
-Coca Cola           x1              31/10/25 10:02:21
-Dr Pepper           x1              31/10/25 10:02:21
-Squares             x1              31/10/25 10:02:21
-Galaxy              x1              31/10/25 10:02:21
-Fanta               x1              31/10/25 10:02:21
-Monster Munch       x1              31/10/25 10:02:21
-Mountain Dew        x1              31/10/25 10:02:21
-Dairy Milk          x1              31/10/25 10:02:21
-Coca Cola           x1              31/10/25 10:05:48
-Dr Pepper           x1              31/10/25 10:05:48
-Squares             x1              31/10/25 10:05:48
-Galaxy              x1              31/10/25 10:05:48
-Fanta               x1              31/10/25 10:05:48
-Mountain Dew        x1              31/10/25 10:05:48
-Monster Munch       x1              31/10/25 10:05:48
-Dairy Milk          x1              31/10/25 10:05:48
-Coca Cola           x1              31/10/25 10:06:21
-Dr Pepper           x1              31/10/25 10:06:21
-Squares             x1              31/10/25 10:06:21
-Galaxy              x1              31/10/25 10:06:21
-Fanta               x1              31/10/25 10:06:21
-Mountain Dew        x1              31/10/25 10:06:21
-Monster Munch       x1              31/10/25 10:06:21
-Dairy Milk          x1              31/10/25 10:06:21
-Coca Cola           x1              31/10/25 10:07:09
-Dr Pepper           x1              31/10/25 10:07:09
-Squares             x1              31/10/25 10:07:09
-Galaxy              x1              31/10/25 10:07:09
-Fanta               x1              31/10/25 10:07:09
-Mountain Dew        x1              31/10/25 10:07:09
-Monster Munch       x1              31/10/25 10:07:09
-Dairy Milk          x1              31/10/25 10:07:09
-Dr Pepper           x2              31/10/25 10:07:22
-Dr Pepper           x2              31/10/25 10:08:19
-Squares             x1              31/10/25 10:09:39
-Squares             x1              31/10/25 10:11:24
-Coca Cola           x1              31/10/25 10:11:33
-Fanta               x1              31/10/25 10:11:33
-Dairy Milk          x3              31/10/25 10:11:51
-Mountain Dew        x4              31/10/25 10:11:51
-Monster Munch       x3              31/10/25 10:11:51
-Fanta               x3              31/10/25 10:11:51
-Galaxy              x1              31/10/25 10:11:51
-Squares             x1              31/10/25 10:11:51
-Coca Cola           x1              31/10/25 10:11:51
-Dr Pepper           x1              31/10/25 10:11:51
-Coca Cola           x1              31/10/25 10:36:23
-Dr Pepper           x1              31/10/25 10:36:23
-Squares             x1              31/10/25 10:36:23
-Galaxy              x1              31/10/25 10:36:23
-Fanta               x1              31/10/25 10:36:23
-Mountain Dew        x2              31/10/25 10:36:23
-Monster Munch       x1              31/10/25 10:36:23
-Dairy Milk          x1              31/10/25 10:36:23
-Coca Cola           x1              31/10/25 10:40:33
-Dr Pepper           x1              31/10/25 10:40:33
-Squares             x1              31/10/25 10:40:33
-Monster Munch       x1              31/10/25 10:40:33
-Fanta               x1              31/10/25 10:40:33
-Mountain Dew        x1              31/10/25 10:40:33
-Dairy Milk          x1              31/10/25 10:40:33
-Monster Munch       x1              31/10/25 10:41:59
-Fanta               x1              31/10/25 10:41:59
-Dairy Milk          x1              31/10/25 10:41:59
-Mountain Dew        x1              31/10/25 10:41:59
-Galaxy              x1              31/10/25 10:41:59
-Squares             x2              31/10/25 10:41:59
-Coca Cola           x2              31/10/25 10:41:59
-Dr Pepper           x2              31/10/25 10:41:59
-Coca Cola           x1              31/10/25 10:44:24
-Dr Pepper           x1              31/10/25 10:44:24
-Squares             x1              31/10/25 10:44:24
-Squares             x1              31/10/25 10:45:29
-Coca Cola           x1              31/10/25 10:45:29
-Dr Pepper           x1              31/10/25 10:45:29
-Galaxy              x1              31/10/25 10:45:29
-Mountain Dew        x1              31/10/25 10:45:29
-Fanta               x1              31/10/25 10:45:29
-Monster Munch       x1              31/10/25 10:45:29
-Dairy Milk          x1              31/10/25 10:45:29
-Dairy Milk          x1              31/10/25 10:45:50
-Coca Cola           x1              31/10/25 10:46:16
-Dr Pepper           x1              31/10/25 10:46:16
-Coca Cola           x1              31/10/25 10:47:39
-Dr Pepper           x1              31/10/25 10:47:39
-Squares             x1              31/10/25 10:47:39
-Galaxy              x1              31/10/25 10:47:39
-Fanta               x1              31/10/25 10:47:39
-Mountain Dew        x1              31/10/25 10:47:39
-Coca Cola           x1              31/10/25 10:55:35
-Dr Pepper           x1              31/10/25 10:55:35
-Galaxy              x1              31/10/25 10:55:35
-Squares             x1              31/10/25 10:55:35
-Dr Pepper           x1              31/10/25 10:56:03
-Coca Cola           x1              31/10/25 10:56:03
-Squares             x1              31/10/25 10:56:03
-Galaxy              x1              31/10/25 10:56:03
-Dr Pepper           x2              01/11/25 09:44:54
-Squares             x2              01/11/25 09:44:54
-Galaxy              x1              01/11/25 09:44:54
-Fanta               x1              01/11/25 09:44:54
-Mountain Dew        x1              01/11/25 09:44:54
-Dairy Milk          x1              01/11/25 09:44:54
-Monster Munch       x1              01/11/25 09:44:54
-Coca Cola           x1              01/11/25 09:44:54
+Coca Cola           x1              01/11/25 10:09:19
+Dr Pepper           x1              01/11/25 10:09:19
+Squares             x1              01/11/25 10:09:19
+Galaxy              x1              01/11/25 10:09:19
+Fanta               x1              01/11/25 10:09:19
+Mountain Dew        x1              01/11/25 10:09:19
+Monster Munch       x1              01/11/25 10:09:19
+Dairy Milk          x1              01/11/25 10:09:19
+
+Coca Cola           x1              01/11/25 10:09:27
+Squares             x1              01/11/25 10:09:27
+Galaxy              x1              01/11/25 10:09:27
+Dr Pepper           x1              01/11/25 10:09:27
+Fanta               x1              01/11/25 10:09:27
+Mountain Dew        x1              01/11/25 10:09:27
+Monster Munch       x1              01/11/25 10:09:27
+Dairy Milk          x1              01/11/25 10:09:27
+
