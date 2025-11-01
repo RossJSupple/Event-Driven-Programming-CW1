@@ -92,6 +92,7 @@ namespace _30094747
             picBoxItemSix.Enabled = false;
             picBoxItemSeven.Enabled = false;
             picBoxItemEight.Enabled = false;
+            lstViewCart.Enabled = false;
         }
 
 
@@ -119,6 +120,7 @@ namespace _30094747
             lblInsertedMoney.Hide();
             txtItemTotals.Text = "£0.00";
             txtInsertedChange.Text = "0.00";
+            lstViewCart.Enabled = true;
             picBoxItemOne.Enabled = true;
             picBoxItemTwo.Enabled = true;
             picBoxItemThree.Enabled = true;
