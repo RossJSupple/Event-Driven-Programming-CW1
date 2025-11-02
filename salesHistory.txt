@@ -1,14 +1,10 @@
 Item Name           Item Quantity        Date
 
-Coca Cola                x1              01/11/25 13:06:56
-Squares                  x3              01/11/25 13:06:56
-Dr Pepper                x1              01/11/25 13:06:56
-Fanta                    x3              01/11/25 13:06:56
-Mountain Dew             x4              01/11/25 13:06:56
-Monster Munch            x1              01/11/25 13:06:56
-Dairy Milk               x1              01/11/25 13:06:56
-Galaxy                   x2              01/11/25 13:06:56
+Coca Cola                x1              02/11/25 11:15:50
+Dr Pepper                x1              02/11/25 11:15:50
+Squares                  x1              02/11/25 11:15:50
+Galaxy                   x1              02/11/25 11:15:50
 
-Order Total: £24.93                      01/11/25 13:06:56
+Order Total: £5.74                       02/11/25 11:15:50
 
 
