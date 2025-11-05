@@ -1,5 +1,3 @@
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
 namespace _30094747
 {
     public partial class Form1 : Form
@@ -14,27 +12,34 @@ namespace _30094747
 
             PictureBox item = (PictureBox)sender;
 
-            string tag = item.Tag.ToString();
-            string itemName = "lbl" + tag + "Name";
-            string itemPrice = "lbl" + tag + "Price";
-
-            Label lblName = this.Controls.Find(itemName, true).FirstOrDefault() as Label;
-            Label lblPrice = this.Controls.Find(itemPrice, true).FirstOrDefault() as Label;
-
-            if (lblName != null && lblPrice != null)
+            if (item != null)
             {
-                shoppingCart(tag, lblName.Text);
-                cartTotal(lblPrice.Text);
+
+                string tag = item.Tag.ToString();
+                string itemName = "lbl" + tag + "Name";
+                string itemPrice = "lbl" + tag + "Price";
+
+                Label lblName = this.Controls.Find(itemName, true).FirstOrDefault() as Label;
+                Label lblPrice = this.Controls.Find(itemPrice, true).FirstOrDefault() as Label;
+
+                if (lblName != null && lblPrice != null)
+                {
+                    shoppingCart(tag, lblName.Text);
+                    cartTotal(lblPrice.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Could not find one or both labels.");
+                }
+
+                string lastAction = "ADD";
+
+                displayLastAction(lastAction, lblName.Text);
             }
             else
             {
-                MessageBox.Show("Could not find one or both labels.");
+                MessageBox.Show("Error, sender was invalid!");
             }
-
-            string lastAction = "ADD";
-
-            displayLastAction(lastAction, lblName.Text);
-
         }
 
         private void shoppingCart(string tag, string itemName)
@@ -62,13 +67,9 @@ namespace _30094747
         private void cartTotal(string price)
         {
             double incomingPrice = Convert.ToDouble(price.Trim('£'));
-
             double oldPrice = Convert.ToDouble(txtItemTotals.Text.Trim('£'));
-
             double newPrice = oldPrice + incomingPrice;
-
             txtItemTotals.Text = '£' + newPrice.ToString("F2");
-
         }
 
         private void btnCheckout_Click(object sender, EventArgs e)
@@ -79,7 +80,7 @@ namespace _30094747
             lblTotal.Hide();
             txtCheckoutTotal.Show();
             lblTotalTwo.Show();
-            txtCheckoutTotal.Text = txtItemTotals.Text; 
+            txtCheckoutTotal.Text = txtItemTotals.Text;
         }
 
         private void disableItemButtons()
@@ -139,7 +140,6 @@ namespace _30094747
             picBoxFivePence.Enabled = false;
             picBoxCoinSlot.Enabled = false;
             MessageBox.Show("System has been reset,\nnext customer please!");
-            
         }
 
         private void btnCancelOrder_Click(object sender, EventArgs e)
@@ -147,11 +147,9 @@ namespace _30094747
             string message = "Are you sure you would like to cancel your order?";
             string messageBoxCaption = "Cancel Order";
             var result = MessageBox.Show(message, messageBoxCaption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
             if (result == DialogResult.Yes)
             {
                 resetSystem();
-
             }
         }
 
@@ -159,7 +157,6 @@ namespace _30094747
         {
             PictureBox money = (PictureBox)sender;
             money.DoDragDrop(money.Tag, DragDropEffects.Copy | DragDropEffects.Move);
-
         }
 
         private void picBoxCoinSlot_DragEnter(object sender, DragEventArgs e)
@@ -194,7 +191,6 @@ namespace _30094747
                 writeTransactionToFile();
                 resetSystem();
             }
-            
         }
 
         private void lstViewCart_ItemDrag(object sender, ItemDragEventArgs e)
@@ -216,11 +212,7 @@ namespace _30094747
             if (e.Data.GetDataPresent(typeof(ListViewItem)))
             {
                 ListViewItem item = (ListViewItem)e.Data.GetData(typeof(ListViewItem));
-
-
                 string tagData = item.Name;
-                
-
                 int index = lstViewCart.Items.IndexOfKey(tagData);
                 int existingQTY = Convert.ToInt32(lstViewCart.Items[index].SubItems[1].Text.ToString());
 
@@ -233,7 +225,6 @@ namespace _30094747
                 {
                     lstViewCart.Items.RemoveByKey(tagData);
                 }
-
                 removeItemFromTotal(tagData);
                 displayLastAction(lastAction, item.Text);
             }
@@ -241,7 +232,6 @@ namespace _30094747
 
         private void removeItemFromTotal(string itemTag)
         {
-            
             string itemPrice = "lbl" + itemTag + "Price";
             double Price;
             double newTotal;
@@ -253,32 +243,29 @@ namespace _30094747
                 Price = Convert.ToDouble(lblPrice.Text.Trim('£'));
                 newTotal = itemTotals - Price;
                 txtItemTotals.Text = '£' + newTotal.ToString("F2");
-
             }
             else
             {
                 MessageBox.Show("Could not the correct label");
             }
-
         }
 
         private void displayLastAction(string lastAction, string name)
         {
-            if(lastAction == "ADD")
+            if (lastAction == "ADD")
             {
                 lblDisplayLastAction.Text = name + " Added To Cart";
             }
             else if (lastAction == "Insert")
             {
-                lblDisplayLastAction.Text = "Amount Inserted: £" + name; 
+                lblDisplayLastAction.Text = "Amount Inserted: £" + name;
             }
-            else if(lastAction == "Remove")
+            else if (lastAction == "Remove")
             {
                 lblDisplayLastAction.Text = name + " Has Been Removed From The Cart";
             }
-            
         }
-        
+
         private void writeTransactionToFile()
         {
             string path = @"../../../salesHistory.txt";
@@ -286,9 +273,7 @@ namespace _30094747
             string header2 = "Item Quantity";
             string header3 = "Date";
             string dateTime = DateTime.Now.ToString("dd/MM/yy HH:mm:ss");
-            
             bool fileExists = false;
-            
 
             if (File.Exists(path))
             {
@@ -304,18 +289,15 @@ namespace _30094747
                 }
                 foreach (ListViewItem item in lstViewCart.Items)
                 {
-                    
                     string itemName = item.Text;
                     string itemQTY = item.SubItems[1].Text;
-                    tw.WriteLine("{0,-25}{1,-15} {2}", itemName,'x' + itemQTY, dateTime);
-
+                    tw.WriteLine("{0,-25}{1,-15} {2}", itemName, 'x' + itemQTY, dateTime);
                 }
                 tw.WriteLine();
                 tw.WriteLine("Order Total: " + "{0, -28}{1}", txtItemTotals.Text, dateTime);
                 tw.WriteLine();
                 tw.WriteLine();
             }
-
         }
     }
 }
