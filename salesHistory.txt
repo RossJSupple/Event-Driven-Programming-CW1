@@ -8,3 +8,21 @@ Galaxy                   x1              02/11/25 11:15:50
 Order Total: £5.74                       02/11/25 11:15:50
 
 
+Fanta                    x1              04/11/25 11:09:52
+Monster Munch            x1              04/11/25 11:09:52
+Mountain Dew             x1              04/11/25 11:09:52
+Dairy Milk               x1              04/11/25 11:09:52
+Galaxy                   x1              04/11/25 11:09:52
+Dr Pepper                x2              04/11/25 11:09:52
+
+Order Total: £11.94                      04/11/25 11:09:52
+
+
+Monster Munch            x1              04/11/25 11:10:55
+Fanta                    x1              04/11/25 11:10:55
+Squares                  x3              04/11/25 11:10:55
+Coca Cola                x6              04/11/25 11:10:55
+
+Order Total: £15.20                      04/11/25 11:10:55
+
+
